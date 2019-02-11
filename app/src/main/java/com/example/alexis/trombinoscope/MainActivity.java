@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     Button btnTrombinoscope;
-    Personne p1 = new Personne("alexis","perez");
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         //Log.i(TAG, msg:"onCreate");

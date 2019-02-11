@@ -9,13 +9,13 @@ import java.util.*;
  */
 
 public class DataPersonne {
-    ArrayList<Personne> ListePersonne = new ArrayList<>();
+    static ArrayList<Personne> ListePersonne = new ArrayList<>();
 
     public ArrayList getPersonne(){
         return this.ListePersonne;
     }
 
-    public void addPersonne(Personne p){
+    public static void addPersonne(Personne p){
         ListePersonne.add(p);
     }
 

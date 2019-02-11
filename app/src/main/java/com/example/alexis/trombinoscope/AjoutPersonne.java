@@ -15,8 +15,8 @@ import java.util.List;
 
 public class AjoutPersonne extends AppCompatActivity {
     Button btnAjout;
-    ArrayList<Personne> ListPersonne = new ArrayList();
 
+    Personne p1 = new Personne("alexis","perez");
     TextView text;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +30,7 @@ public class AjoutPersonne extends AppCompatActivity {
                 //Log.i(Tag, msg:"redirection vers person List")
                 Toast.makeText(getApplicationContext(), "Ajout de l'étudiant", Toast.LENGTH_LONG).show();
                 //TextView nom = (TextView) findViewById(R.id.nom);
-
+                DataPersonne.addPersonne(p1);
             }
         });
     }
