@@ -1,5 +1,6 @@
 package com.example.alexis.trombinoscope;
 
+import android.content.Intent;
 import android.nfc.Tag;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -21,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //Log.i(Tag, msg:"redirection vers person List")
                 Toast.makeText(getApplicationContext(), "BIENVENUE AU TROMBINOSCOPE", Toast.LENGTH_LONG).show();
+                Intent activityChangeIntent = new Intent(MainActivity.this, AjoutPersonne.class);
+                MainActivity.this.startActivity(activityChangeIntent);
             }
         });
 
