@@ -1,10 +1,12 @@
 package com.example.alexis.trombinoscope;
 
 import android.content.Intent;
+import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -15,8 +17,6 @@ import java.util.List;
 
 public class AjoutPersonne extends AppCompatActivity {
     Button btnAjout;
-
-    Personne p1 = new Personne("alexis","perez");
     TextView text;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,12 +27,16 @@ public class AjoutPersonne extends AppCompatActivity {
         btnAjout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Log.i(Tag, msg:"redirection vers person List")
-                Toast.makeText(getApplicationContext(), "Ajout de l'étudiant", Toast.LENGTH_LONG).show();
-                //TextView nom = (TextView) findViewById(R.id.nom);
-                DataPersonne.addPersonne(p1);
-
+                String nom = ((EditText)findViewById(R.id.nom)).getText().toString();
+                String prenom = ((EditText)findViewById(R.id.name)).getText().toString();
+                if (!nom.equals("") && !prenom.equals("")) {
+                    Personne p = new Personne(nom, prenom);
+                    DataPersonne.addPersonne(p);
+                    Toast.makeText(getApplicationContext(), p.toString(),Toast.LENGTH_LONG).show();
+                }
             }
         });
     }
+
+
 }

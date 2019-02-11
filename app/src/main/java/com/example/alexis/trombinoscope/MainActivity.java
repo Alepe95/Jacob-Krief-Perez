@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
                 //Log.i(Tag, msg:"redirection vers person List")
                 Toast.makeText(getApplicationContext(), "BIENVENUE AU TROMBINOSCOPE", Toast.LENGTH_LONG).show();
                 Intent activityChangeIntent = new Intent(MainActivity.this, AjoutPersonne.class);
+                Intent activityChangeIntent1 = new Intent(MainActivity.this, AjoutPersonne.class);
                 MainActivity.this.startActivity(activityChangeIntent);
             }
         });

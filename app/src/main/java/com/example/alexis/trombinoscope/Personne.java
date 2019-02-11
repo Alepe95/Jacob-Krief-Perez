@@ -10,7 +10,7 @@ public class Personne {
     private String prenom;
     private int Couleur;
 
-    public Personne(String nom, String Prenom){
+    public Personne(String nom, String prenom){
         this.nom = nom;
         this.prenom = prenom;
     }
@@ -21,5 +21,10 @@ public class Personne {
 
     public String getPrenom(){
         return this.prenom;
+    }
+
+    @Override
+    public String toString(){
+        return "Nom : "+ this.getNom()+"Prénom: "+this.getPrenom();
     }
 }

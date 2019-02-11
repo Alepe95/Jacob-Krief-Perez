@@ -9,14 +9,14 @@ import java.util.*;
  */
 
 public class DataPersonne {
-    static ArrayList<Personne> ListePersonne = new ArrayList<>();
+    static ArrayList<Personne> personnes = new ArrayList<>();
 
     public ArrayList getPersonne(){
-        return this.ListePersonne;
+        return this.personnes;
     }
 
     public static void addPersonne(Personne p){
-        ListePersonne.add(p);
+        personnes.add(p);
     }
 
 
