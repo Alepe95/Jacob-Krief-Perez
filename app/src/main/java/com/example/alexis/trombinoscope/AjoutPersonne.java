@@ -29,8 +29,8 @@ public class AjoutPersonne extends AppCompatActivity {
             public void onClick(View v) {
                 //Log.i(Tag, msg:"redirection vers person List")
                 Toast.makeText(getApplicationContext(), "Ajout de l'étudiant", Toast.LENGTH_LONG).show();
-                TextView nom = (TextView) findViewById(R.id.nom);
-                ListPersonne.add(1,nom);
+                //TextView nom = (TextView) findViewById(R.id.nom);
+
             }
         });
     }

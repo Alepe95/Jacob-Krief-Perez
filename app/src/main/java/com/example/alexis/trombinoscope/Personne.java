@@ -5,8 +5,10 @@ package com.example.alexis.trombinoscope;
  */
 
 public class Personne {
+
     private String nom;
     private String prenom;
+    private int Couleur;
 
     public Personne(String nom, String Prenom){
         this.nom = nom;
