@@ -17,6 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".AjoutPersonne"></activity>
+        <activity android:name=".PersonList"></activity>
+
     </application>
 
 </manifest>

@@ -1,7 +1,6 @@
 package com.example.alexis.trombinoscope;
 
 
-import java.lang.reflect.Array;
 import java.util.*;
 
 /**
@@ -9,13 +8,13 @@ import java.util.*;
  */
 
 public class DataPersonne {
-    static ArrayList<Personne> personnes = new ArrayList<>();
+    static ArrayList<Person> personnes = new ArrayList<>();
 
-    public ArrayList getPersonne(){
-        return this.personnes;
+    public static ArrayList getPersonne(){
+        return personnes;
     }
 
-    public static void addPersonne(Personne p){
+    public static void addPersonne(Person p){
         personnes.add(p);
     }
 
