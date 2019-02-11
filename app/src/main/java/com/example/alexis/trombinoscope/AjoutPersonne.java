@@ -5,12 +5,22 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import org.w3c.dom.Text;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class AjoutPersonne extends AppCompatActivity {
     Button btnAjout;
+    ArrayList<Personne> ListPersonne = new ArrayList();
+
+    TextView text;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ajout_personne);
         btnAjout = (Button) findViewById(R.id.btnTrombinoscope);
@@ -19,7 +29,8 @@ public class AjoutPersonne extends AppCompatActivity {
             public void onClick(View v) {
                 //Log.i(Tag, msg:"redirection vers person List")
                 Toast.makeText(getApplicationContext(), "Ajout de l'étudiant", Toast.LENGTH_LONG).show();
-
+                TextView nom = (TextView) findViewById(R.id.nom);
+                ListPersonne.add(1,nom);
             }
         });
     }
