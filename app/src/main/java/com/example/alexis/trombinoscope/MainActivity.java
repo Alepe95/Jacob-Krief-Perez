@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     Button btnTrombinoscope;
+    Button btnAjouterPerson;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +19,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         btnTrombinoscope = (Button) findViewById(R.id.btnTrombinoscope);
-        btnTrombinoscope.setOnClickListener(new View.OnClickListener() {
+        btnAjouterPerson = (Button) findViewById(R.id.Add_Personne);
+        btnAjouterPerson.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //Log.i(Tag, msg:"redirection vers person List")

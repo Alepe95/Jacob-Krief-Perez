@@ -23,7 +23,7 @@ public class AjoutPersonne extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ajout_personne);
-        btnAjout = (Button) findViewById(R.id.btnTrombinoscope);
+        btnAjout = (Button) findViewById(R.id.Ajouter);
         btnAjout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -31,6 +31,7 @@ public class AjoutPersonne extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "Ajout de l'étudiant", Toast.LENGTH_LONG).show();
                 //TextView nom = (TextView) findViewById(R.id.nom);
                 DataPersonne.addPersonne(p1);
+
             }
         });
     }
