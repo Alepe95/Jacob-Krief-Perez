@@ -25,9 +25,10 @@ public class PersonList extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.liste_personne);
         Log.i(this.getClass().getName(), "List des personnes :" + DataPersonne.getPersonne());
+
         view = (ListView) findViewById(R.id.listeP);
 
         PersonAdapter adapt = new PersonAdapter( PersonList.this,liste);
-
+        view.setAdapter(adapt);
     }
 }

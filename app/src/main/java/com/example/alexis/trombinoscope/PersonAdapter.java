@@ -2,6 +2,7 @@ package com.example.alexis.trombinoscope;
 import android.content.Context;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -40,9 +41,10 @@ public class PersonAdapter extends ArrayAdapter<Person> {
         Person person = getItem(position);
 
         //il ne reste plus qu'à remplir notre vue
-        viewHolder.firstName.setText(person.getNom());
-        viewHolder.lastName.setText(person.getPrenom());
-        viewHolder.avatar.setImageDrawable(new ColorDrawable(person.getAvatarColor()));
+        Log.i("ICI", person.getNom());
+        //viewHolder.firstName.setText(person.getNom());
+        //viewHolder.lastName.setText(person.getPrenom());
+        //viewHolder.avatar.setImageDrawable(new ColorDrawable(person.getAvatarColor()));
 
         return convertView;
     }

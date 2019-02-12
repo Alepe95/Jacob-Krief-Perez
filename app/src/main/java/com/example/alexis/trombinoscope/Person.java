@@ -26,8 +26,7 @@ public class Person {
     public int getAvatarColor(){
         return this.avatarColor;
     }
-    @Override
-    public String toString(){
-        return "Nom : "+ this.getNom()+"Prénom: "+this.getPrenom();
-    }
+
+
+
 }
